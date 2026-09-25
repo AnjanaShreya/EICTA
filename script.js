@@ -68,6 +68,27 @@
     if (heroSection) {
       heroSection.addEventListener('mouseenter', () => clearInterval(state.heroAutoTimer));
       heroSection.addEventListener('mouseleave', startHeroTimer);
+
+      // Mobile Touch Swipe Handling
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      heroSection.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      heroSection.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 40) {
+          if (diff < 0) {
+            setHeroSlide(state.heroSlideIndex + 1);
+          } else {
+            setHeroSlide(state.heroSlideIndex - 1);
+          }
+          startHeroTimer();
+        }
+      }, { passive: true });
     }
 
     startHeroTimer();
@@ -405,6 +426,27 @@
     window.addEventListener('resize', () => {
       scrollToIndex(currentIndex, false);
     });
+
+    // Touch swipe gesture support for mobile
+    let testTouchStartX = 0;
+    let testTouchEndX = 0;
+    if (wrap) {
+      wrap.addEventListener('touchstart', (e) => {
+        testTouchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      wrap.addEventListener('touchend', (e) => {
+        testTouchEndX = e.changedTouches[0].screenX;
+        const diff = testTouchEndX - testTouchStartX;
+        if (Math.abs(diff) > 40) {
+          if (diff < 0) {
+            goNext();
+          } else {
+            goPrev();
+          }
+        }
+      }, { passive: true });
+    }
   }
 
   /* ==========================================================================
@@ -826,6 +868,75 @@
   }
 
   /* ==========================================================================
+     6. Mobile Navigation Drawer Controller
+     ========================================================================== */
+  function initMobileNav() {
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const closeBtn = document.getElementById('mobile-menu-close');
+    const backdrop = document.getElementById('mobile-nav-backdrop');
+    const drawer = document.getElementById('mobile-nav-drawer');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-item:not(#btn-login-mobile):not(#btn-join-mobile)');
+    const mobileLoginBtn = document.getElementById('btn-login-mobile');
+    const mobileJoinBtn = document.getElementById('btn-join-mobile');
+    const authModal = document.getElementById('modal-auth');
+
+    function openMobileMenu() {
+      drawer?.classList.add('open');
+      backdrop?.classList.add('open');
+      toggleBtn?.classList.add('active');
+      toggleBtn?.setAttribute('aria-expanded', 'true');
+      drawer?.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      drawer?.classList.remove('open');
+      backdrop?.classList.remove('open');
+      toggleBtn?.classList.remove('active');
+      toggleBtn?.setAttribute('aria-expanded', 'false');
+      drawer?.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    toggleBtn?.addEventListener('click', () => {
+      if (drawer?.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    closeBtn?.addEventListener('click', closeMobileMenu);
+    backdrop?.addEventListener('click', closeMobileMenu);
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawer?.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    mobileLoginBtn?.addEventListener('click', () => {
+      closeMobileMenu();
+      authModal?.classList.add('open');
+      authModal?.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileJoinBtn?.addEventListener('click', () => {
+      closeMobileMenu();
+      authModal?.classList.add('open');
+      authModal?.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  /* ==========================================================================
      Initialization
      ========================================================================== */
   document.addEventListener('DOMContentLoaded', () => {
@@ -834,5 +945,6 @@
     initTestimonials();
     initCategories();
     initModals();
+    initMobileNav();
   });
 })();

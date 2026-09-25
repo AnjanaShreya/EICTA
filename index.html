@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics & ICT Academy | IIT Kanpur - EICTA Consortium</title>
+  <meta name="description"
+    content="Official portal of Electronics & ICT Academy, IIT Kanpur (EICTA Consortium) - A joint initiative with Ministry of Electronics and Information Technology (MeitY), Government of India.">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Header -->
+  <header class="top-header" role="banner">
+    <!-- Centered Logo Row Matching Image -->
+    <div class="header-logo-row">
+      <a href="#" class="eicta-header-logo-link" aria-label="Ministry of Electronics and Information Technology | EICTA Consortium Home">
+        <img src="./images/logo.jpg" alt="Ministry of Electronics and Information Technology | EICTA Consortium" class="eicta-top-logo">
+      </a>
+    </div>
+
+    <!-- Navigation & Action Buttons Row -->
+    <div class="container-eicta header-nav-row">
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li>
+            <a href="#about" class="nav-link">
+              <span>About Us</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#courses" class="nav-link">
+              <span>Our Courses</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#knowledge-hub" class="nav-link">Knowledge Hub</a></li>
+          <li><a href="#consortium" class="nav-link">EICTA Connect</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-nav-login" id="btn-login-open">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+            <polyline points="10 17 15 12 10 7" />
+            <line x1="15" y1="12" x2="3" y2="12" />
+          </svg>
+          <span>Login</span>
+        </button>
+        <button type="button" class="btn-nav-join" id="btn-join-open">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <line x1="19" y1="8" x2="19" y2="14" />
+            <line x1="22" y1="11" x2="16" y2="11" />
+          </svg>
+          <span>Join for Free</span>
+        </button>
+        <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" rel="noopener noreferrer" class="btn-nav-explore" id="btn-explore-open" aria-label="Explore All Courses">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+          </svg>
+          <span>Explore</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Banner with 4 Slides Matching User Images -->
+    <section class="hero-section" id="home" aria-label="EICTA Hero Slider">
+      <div class="hero-slider-track">
+        <!-- Slide 1: Professional Courses (slider-2.jpg) -->
+        <div class="hero-slide active" style="background-image: url('./images/slider-2.jpg');">
+          <div class="container-eicta hero-slide-inner">
+            <div class="hero-slide-content">
+              <h1 class="hero-title">Unlock Your Future with Industry-Ready<br>Professional Courses</h1>
+              <p class="hero-desc">Explore professional courses designed to equip you with in-demand skills across
+                emerging tech domains—crafted by top institutions and backed by MeitY. From AI and Data Science to Cloud,
+                Cybersecurity, and more—discover the right course to accelerate your career.</p>
+              <a href="#courses" class="hero-btn-green">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Summer Training Program (stp-slider-eicta-1.jpg) -->
+        <div class="hero-slide" style="background-image: url('./images/stp-slider-eicta-1.jpg');">
+          <div class="container-eicta hero-slide-inner">
+            <div class="hero-slide-content">
+              <h2 class="hero-title">E&ICT Academy Announces the Summer<br>Training Program 2026</h2>
+              <div class="hero-btn-wrap" style="margin-top: 2rem;">
+                <a href="#courses" class="hero-btn-green">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: NEP 2020 Faculty Development (slider-3.jpg) -->
+        <div class="hero-slide" style="background-image: url('./images/slider-3.jpg');">
+          <div class="container-eicta hero-slide-inner">
+            <div class="hero-slide-content">
+              <h2 class="hero-title">Empower Your Teaching with NEP 2020-Aligned<br>Faculty Development Courses</h2>
+              <p class="hero-desc">Enhance your teaching skills with NEP 2020-aligned Faculty Development Courses by E&ICT
+                Academy. Designed by top institutions, these programs equip educators with modern tools and domain knowledge
+                across AI, Data Science, and more.</p>
+              <a href="#courses" class="hero-btn-green">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Partnerships (slider-4.jpg) -->
+        <div class="hero-slide" style="background-image: url('./images/slider-4.jpg');">
+          <div class="container-eicta hero-slide-inner">
+            <div class="hero-slide-content">
+              <h2 class="hero-title">Explore Partnerships to Accelerate<br>Education and Innovation</h2>
+              <p class="hero-desc">Join hands with E&ICT Academy through strategic partnerships to drive impactful
+                education, skill development, and innovation. Collaborate to co-create programs, bridge industry-academia
+                gaps, and shape a future-ready workforce.</p>
+              <a href="#consortium" class="hero-btn-green">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Left/Right Arrows -->
+      <button type="button" class="hero-nav-arrow prev" id="hero-prev-btn" aria-label="Previous Slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button type="button" class="hero-nav-arrow next" id="hero-next-btn" aria-label="Next Slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Indicators matching the 4 slides -->
+      <div class="hero-indicators" role="tablist" aria-label="Slider navigation">
+        <button type="button" class="hero-dot active" data-index="0" role="tab" aria-label="Slide 1"></button>
+        <button type="button" class="hero-dot" data-index="1" role="tab" aria-label="Slide 2"></button>
+        <button type="button" class="hero-dot" data-index="2" role="tab" aria-label="Slide 3"></button>
+        <button type="button" class="hero-dot" data-index="3" role="tab" aria-label="Slide 4"></button>
+      </div>
+    </section>
+
+    <!-- About E&ICT Academies Section -->
+    <section class="about-section" id="about">
+      <div class="container-eicta">
+        <div class="about-grid">
+          <!-- Text Column -->
+          <div class="about-text-col">
+            <h2 class="section-heading-main">About E&ICT Academies</h2>
+            <p class="about-text">
+              The Electronics & ICT Academies is a government-supported initiative aimed at improving the employability
+              of graduates and diploma holders across various disciplines. With financial assistance from the Central
+              Government, it is a joint venture between the Ministry of Electronics and Information Technology (MeitY)
+              and premier institutions such as IITs, NITs, and IIITs. EICTA consortium plays a significant role in this
+              mission by offering a wide range of comprehensive online courses tailored to meet the needs of fresh
+              graduates, working professionals, and faculty members. These courses cover emerging and in-demand fields
+              such as Artificial Intelligence (AI), Machine Learning (ML), Cybersecurity, Cloud Computing, Data Science,
+              Programming, and Sustainability. By focusing on practical skills and industry-aligned content, the Academy
+              aims to bridge the gap between academic learning and real-world requirements, thereby enhancing the
+              technical capabilities and career prospects of participants.
+            </p>
+          </div>
+
+          <!-- Illustration Column -->
+          <div class="about-illustration-col">
+            <img src="./images/about-us-banner.png" alt="About E&ICT Academies" class="about-banner-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unlock Your Career Potential Section -->
+    <section class="career-section" id="courses">
+      <div class="container-eicta">
+        <!-- Header & Tabs Row -->
+        <div class="section-header-row">
+          <h2 class="section-heading-main">Unlock your career potential with EICTA Consortium Courses</h2>
+          <div class="career-controls-row">
+            <!-- Filter Pills -->
+            <div class="filter-pills-group" role="tablist">
+              <button type="button" class="filter-pill active" data-audience="individuals" role="tab"
+                aria-selected="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>For Individuals</span>
+              </button>
+              <button type="button" class="filter-pill" data-audience="corporates" role="tab" aria-selected="false">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <rect x="4" y="2" width="16" height="20" rx="2" />
+                  <path d="M9 22v-4h6v4" />
+                  <path d="M8 6h.01" />
+                  <path d="M16 6h.01" />
+                  <path d="M12 6h.01" />
+                  <path d="M12 10h.01" />
+                  <path d="M12 14h.01" />
+                  <path d="M16 10h.01" />
+                  <path d="M16 14h.01" />
+                  <path d="M8 10h.01" />
+                  <path d="M8 14h.01" />
+                </svg>
+                <span>For Corporates</span>
+              </button>
+              <button type="button" class="filter-pill" data-audience="universities" role="tab" aria-selected="false">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+                <span>For Universities</span>
+              </button>
+            </div>
+
+            <!-- View More Button -->
+            <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" rel="noopener noreferrer" class="btn-view-more" id="btn-view-more-courses">
+              <span>View More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="13 17 18 12 13 7"></polyline>
+                <polyline points="6 17 11 12 6 7"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Course Cards Grid Matching Screenshot -->
+        <div class="cards-grid-4" id="featured-courses-grid">
+          <!-- Card 1: Emerging CTO AI Leadership Program -->
+          <div class="course-card">
+            <div class="course-card-thumb">
+              <img src="./images/course-cto.jpg" alt="Emerging CTO AI Leadership Program" class="course-thumb-img">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Emerging CTO AI Leadership Program</h3>
+              <div class="course-card-meta">
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>13/06/2026</span>
+                </span>
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span>32 Weeks</span>
+                </span>
+              </div>
+              <p class="course-card-desc">
+                Take your career to the next level with the Emerging CTO Program by EICTA Consortium. Specially designed
+                for t... <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="learn-more-link">Learn More</a>
+              </p>
+              <div class="course-card-footer">
+                <span class="course-price">₹4,69,050</span>
+                <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="btn-enroll-now">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Gen AI in Cyber Security -->
+          <div class="course-card">
+            <div class="course-card-thumb">
+              <img src="./images/course-cyber.jpg" alt="Gen AI in Cyber Security" class="course-thumb-img">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Gen AI in Cyber Security</h3>
+              <p class="course-card-desc">
+                The "Gen AI in Cyber Security" program is a beginner-friendly, live online course designed to equip
+                learners w... <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="learn-more-link">Learn More</a>
+              </p>
+              <div class="course-card-footer">
+                <span class="course-price">₹17,699</span>
+                <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="btn-enroll-now">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: AI Powered Digital Marketing - Advanced... -->
+          <div class="course-card">
+            <div class="course-card-thumb">
+              <img src="./images/course-marketing.jpg" alt="AI Powered Digital Marketing – Advanced..." class="course-thumb-img">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">AI Powered Digital Marketing – Advanced...</h3>
+              <div class="course-card-meta">
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>28/11/2026</span>
+                </span>
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span>3 Months</span>
+                </span>
+              </div>
+              <p class="course-card-desc">
+                An execution-first, live digital marketing program focused on performance marketing, AI-driven
+                optimization, a... <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="learn-more-link">Learn More</a>
+              </p>
+              <div class="apply-by-chip">
+                <span>Last Date to Apply :</span>
+                <span class="apply-date-box">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>27/11/2026</span>
+                </span>
+              </div>
+              <div class="course-card-footer">
+                <span class="course-price">₹41,300</span>
+                <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="btn-enroll-now">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Agentic AI for Everyone -->
+          <div class="course-card">
+            <div class="course-card-thumb">
+              <img src="./images/course-agentic.jpg" alt="Agentic AI for Everyone" class="course-thumb-img">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Agentic AI for Everyone</h3>
+              <div class="course-card-meta">
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>10/10/2026</span>
+                </span>
+                <span class="meta-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                  <span>20 Hours</span>
+                </span>
+              </div>
+              <p class="course-card-desc">
+                Build your own AI co-worker to automate your daily workflows <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="learn-more-link">Learn More</a>
+              </p>
+              <div class="apply-by-chip">
+                <span>Last Date to Apply :</span>
+                <span class="apply-date-box">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                  <span>09/10/2026</span>
+                </span>
+              </div>
+              <div class="course-card-footer">
+                <span class="course-price">₹7,080</span>
+                <a href="https://www.eicta.iitk.ac.in/explore" target="_blank" class="btn-enroll-now">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" aria-label="Student Testimonials">
+      <div class="container-eicta">
+        <h2 class="testimonials-heading">What our students have to say</h2>
+        <div class="testimonials-slider-wrap">
+          <button type="button" class="testimonials-nav-btn prev" id="test-prev-btn" aria-label="Previous Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <button type="button" class="testimonials-nav-btn next" id="test-next-btn" aria-label="Next Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </button>
+
+          <div class="testimonials-track" id="testimonials-track">
+            <!-- Review 1: Rahul Dhar -->
+            <div class="testimonial-card">
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80"
+                  alt="Rahul Dhar" class="testimonial-avatar">
+                <div class="testimonial-name">Rahul Dhar</div>
+              </div>
+              <p class="testimonial-quote">"Focused on long-term strategic learning, the course helped me understand how
+                to address future challenges and align tech with organizational goals."</p>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 2: Aditya -->
+            <div class="testimonial-card">
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80"
+                  alt="Aditya" class="testimonial-avatar">
+                <div class="testimonial-name">Aditya</div>
+              </div>
+              <p class="testimonial-quote">"A holistic program offering a 360-degree view of technology and business.
+                The faculty and peer discussions during the campus immersion were..."</p>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 3: Thompson Cherian -->
+            <div class="testimonial-card">
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80"
+                  alt="Thompson Cherian" class="testimonial-avatar">
+                <div class="testimonial-name">Thompson Cherian</div>
+              </div>
+              <p class="testimonial-quote">"What stood out were the real-world case studies and interactive sessions
+                with IT faculty and industry experts. It was a truly enriching experience."</p>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 4: Sushit Thakur -->
+            <div class="testimonial-card">
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&auto=format&fit=crop&q=80"
+                  alt="Sushit Thakur" class="testimonial-avatar">
+                <div class="testimonial-name">Sushit Thakur</div>
+              </div>
+              <p class="testimonial-quote">"The course offers comprehensive coverage, from foundational concepts to
+                architectural-level security. It addresses application to hardware-level security..."</p>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+
+            <!-- Review 5: Anadi Dutt Sharma -->
+            <div class="testimonial-card">
+              <div class="testimonial-user">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&auto=format&fit=crop&q=80"
+                  alt="Anadi Dutt Sharma" class="testimonial-avatar">
+                <div class="testimonial-name">Anadi Dutt Sharma</div>
+              </div>
+              <p class="testimonial-quote">"This course delivers crisp, relevant content that adds real value. Kudos to
+                the content and preparation teams for designing such an insightful learning experience."</p>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Slider Dots -->
+          <div class="testimonials-dots">
+            <span class="testimonials-dot active"></span>
+            <span class="testimonials-dot"></span>
+            <span class="testimonials-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EICTA Consortium Courses Section (Sidebar + Filters + Grid) -->
+    <section class="consortium-courses-section">
+      <div class="container-eicta">
+        <h2 class="section-heading-main" style="margin-bottom: 2rem;">EICTA Consortium Courses</h2>
+
+        <div class="consortium-layout">
+          <!-- Left Sidebar Categories -->
+          <aside class="categories-sidebar" aria-label="Course Categories">
+            <button type="button" class="category-btn active" data-cat="ai-ml">
+              <span>Artificial Intelligence & Machine Learning</span>
+              <span class="cat-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </span>
+            </button>
+            <button type="button" class="category-btn" data-cat="blockchain">Blockchain Technology</button>
+            <button type="button" class="category-btn" data-cat="cad">CAD and Analysis</button>
+            <button type="button" class="category-btn" data-cat="cybersecurity">Cyber Security</button>
+            <button type="button" class="category-btn" data-cat="datascience">Data Science & Analytics</button>
+            <button type="button" class="category-btn" data-cat="marketing">Digital Marketing</button>
+            <button type="button" class="category-btn" data-cat="ev">Electric Vehicle</button>
+            <button type="button" class="category-btn" data-cat="entrepreneurship">Entrepreneurship</button>
+            <button type="button" class="category-btn" data-cat="executive">Executive Leadership</button>
+            <button type="button" class="category-btn" data-cat="fintech">Fintech</button>
+            <button type="button" class="category-btn" data-cat="healthcare">Healthcare</button>
+            <button type="button" class="category-btn" data-cat="iot">Internet of Things & Cyber-Physical Systems</button>
+            <button type="button" class="category-btn" data-cat="matlab">MATLAB/Embedded Systems</button>
+            <button type="button" class="category-btn" data-cat="operations">Operations</button>
+            <button type="button" class="category-btn" data-cat="product-management">Product Management</button>
+            <button type="button" class="category-btn" data-cat="programming">Programming & Software Systems</button>
+            <button type="button" class="category-btn" data-cat="project-management">Project Management</button>
+            <button type="button" class="category-btn" data-cat="quantum">Quantum Computing</button>
+            <button type="button" class="category-btn" data-cat="web-dev">Web Development</button>
+          </aside>
+
+          <!-- Right Content Area -->
+          <div class="consortium-content-area">
+            <!-- Top Controls: Mode filters (Scroll arrows removed as requested) -->
+            <div class="catalog-top-row">
+              <div class="mode-filters-group">
+                <button type="button" class="mode-filter-pill active" data-mode="Online">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  <span>Online</span>
+                </button>
+                <button type="button" class="mode-filter-pill" data-mode="Offline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                  <span>Offline</span>
+                </button>
+                <button type="button" class="mode-filter-pill" data-mode="Hybrid">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                  </svg>
+                  <span>Hybrid</span>
+                </button>
+                <button type="button" class="mode-filter-pill" data-mode="Self Paced">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="13" rx="2" />
+                    <path d="M2 20h20" />
+                  </svg>
+                  <span>Self Paced</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3 Course Cards Grid Matching Screenshot -->
+            <div class="consortium-cards-grid" id="consortium-cards-grid">
+              <!-- Card 1: Generative AI -->
+              <div class="course-card">
+                <div class="course-card-thumb">
+                  <img src="./images/consortium-genai-chip.jpg" alt="Professional Certificate Course in Generative AI"
+                    class="course-thumb-img">
+                </div>
+                <div class="course-card-content">
+                  <h3 class="course-card-title">Professional Certificate Course in Generative AI...</h3>
+                  <div class="course-card-meta">
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>22/07/2026</span>
+                    </span>
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>11 Months</span>
+                    </span>
+                  </div>
+                  <p class="course-card-desc">
+                    To further the objectives of E&ICT Academy under the Ministry of Electronics & Information
+                    Technology (MeitY),... <a class="learn-more-link"
+                      href="https://www.eicta.iitk.ac.in/courses/professional-certificate-course-in-ai-ml"
+                      target="_blank">Learn More</a>
+                  </p>
+                  <div class="apply-by-chip">
+                    <span class="apply-label">Last Date to Apply :</span>
+                    <span class="apply-date-box">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>21/07/2026</span>
+                    </span>
+                  </div>
+                  <div class="course-card-footer">
+                    <span class="course-price">₹1,53,400</span>
+                    <a href="https://www.eicta.iitk.ac.in/payment/professional-certificate-course-in-ai-ml?mode=ONLINE"
+                      target="_blank" class="btn-enroll-now">Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Leadership -->
+              <div class="course-card">
+                <div class="course-card-thumb">
+                  <img src="./images/consortium-leader-city.jpg" alt="Professional Certificate Program in Leadership"
+                    class="course-thumb-img">
+                </div>
+                <div class="course-card-content">
+                  <h3 class="course-card-title">Professional Certificate Program in Leadership...</h3>
+                  <div class="course-card-meta">
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>29/11/2026</span>
+                    </span>
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>8 Months</span>
+                    </span>
+                  </div>
+                  <p class="course-card-desc">
+                    Lead Business Innovation with AI Strategy, Generative AI, and Change Management <a
+                      class="learn-more-link"
+                      href="https://www.eicta.iitk.ac.in/courses/professional-certificate-program-in-leadership-with-ai"
+                      target="_blank">Learn More</a>
+                  </p>
+                  <div class="apply-by-chip">
+                    <span class="apply-label">Last Date to Apply :</span>
+                    <span class="apply-date-box">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>27/11/2026</span>
+                    </span>
+                  </div>
+                  <div class="course-card-footer">
+                    <span class="course-price">₹2,23,020</span>
+                    <a href="https://www.eicta.iitk.ac.in/payment/professional-certificate-program-in-leadership-with-ai?mode=ONLINE"
+                      target="_blank" class="btn-enroll-now">Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3: AI for Leaders -->
+              <div class="course-card">
+                <div class="course-card-thumb">
+                  <img src="./images/consortium-ai-leaders.jpg" alt="Advanced Certificate Program in AI for Leaders"
+                    class="course-thumb-img">
+                </div>
+                <div class="course-card-content">
+                  <h3 class="course-card-title">Advanced Certificate Program in AI for Leaders</h3>
+                  <div class="course-card-meta">
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>29/11/2026</span>
+                    </span>
+                    <span class="meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>5 Months</span>
+                    </span>
+                  </div>
+                  <p class="course-card-desc">
+                    Strategic AI Thinking, Generative AI Tools, and Business Impact without Coding <a
+                      class="learn-more-link"
+                      href="https://www.eicta.iitk.ac.in/courses/advanced-certificate-program-in-ai-for-leaders"
+                      target="_blank">Learn More</a>
+                  </p>
+                  <div class="apply-by-chip">
+                    <span class="apply-label">Last Date to Apply :</span>
+                    <span class="apply-date-box">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                      </svg>
+                      <span>27/11/2026</span>
+                    </span>
+                  </div>
+                  <div class="course-card-footer">
+                    <span class="course-price">₹1,87,620</span>
+                    <a href="https://www.eicta.iitk.ac.in/courses/advanced-certificate-program-in-ai-for-leaders"
+                      target="_blank" class="btn-enroll-now">Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Knowledge Hub Section -->
+    <section class="knowledge-section" id="knowledge-hub">
+      <div class="container-eicta">
+        <div class="knowledge-header-row">
+          <h2 class="section-heading-main" style="margin-bottom: 0;">Knowledge Hub</h2>
+          <a href="https://www.eicta.iitk.ac.in/knowledge-hub" target="_blank" class="btn-view-more-articles"
+            id="btn-view-articles">
+            <span>View More Articles</span>
+            <span>&gt;&gt;</span>
+          </a>
+        </div>
+
+        <div class="knowledge-cards-grid">
+          <!-- Article 1: Business Analytics -->
+          <article class="knowledge-card">
+            <div class="knowledge-card-thumb">
+              <img src="./images/knowledge-ai-analytics.jpg" alt="How AI Is Transforming Business Analytics"
+                class="knowledge-thumb-img">
+            </div>
+            <div class="knowledge-content">
+              <h3 class="knowledge-title">How AI Is Transforming Business Analytics: Benefits, Use Cases &amp; Trends
+              </h3>
+              <p class="knowledge-desc">Learn how artificial intelligence is transforming business analytics through
+                faster analysis, predictive insights, automation, real-time data, an...</p>
+              <a href="https://www.eicta.iitk.ac.in/knowledge-hub/business-analytics-with-ai/artificial-intelligence-in-business-analytics"
+                target="_blank" rel="noopener noreferrer" class="knowledge-link">
+                <span>Read More</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2: Finance Skills -->
+          <article class="knowledge-card">
+            <div class="knowledge-card-thumb">
+              <img src="./images/knowledge-finance-skills.jpg"
+                alt="The Essential Skills for Today's Finance Professionals" class="knowledge-thumb-img">
+            </div>
+            <div class="knowledge-content">
+              <h3 class="knowledge-title">The Essential Skills for Today's Finance Professionals</h3>
+              <p class="knowledge-desc">Explore the essential finance skills for today's professionals, including
+                financial analysis, AI, data analytics, strategic thinking, communication, and...</p>
+              <a href="https://www.eicta.iitk.ac.in/knowledge-hub/financial-strategy/essential-skills-for-finance-professionals"
+                target="_blank" rel="noopener noreferrer" class="knowledge-link">
+                <span>Read More</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3: Future of Finance with AI -->
+          <article class="knowledge-card">
+            <div class="knowledge-card-thumb">
+              <img src="./images/knowledge-future-finance.jpg" alt="The Future of Finance with AI"
+                class="knowledge-thumb-img">
+            </div>
+            <div class="knowledge-content">
+              <h3 class="knowledge-title">The Future of Finance with AI</h3>
+              <p class="knowledge-desc">Explore AI in finance trends, including Agentic AI, GenAI, RAG, risk modelling,
+                automation, regulation, and the skills shaping financial services.</p>
+              <a href="https://www.eicta.iitk.ac.in/knowledge-hub/artificial-intelligence/the-future-of-finance-with-ai"
+                target="_blank" rel="noopener noreferrer" class="knowledge-link">
+                <span>Read More</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Sample Certificates Section Matching Screenshot -->
+    <section class="certificates-section" id="verify">
+      <div class="container-eicta">
+        <h2 class="section-heading-main" style="margin-bottom: 2rem;">Sample Certificates</h2>
+        <div class="certificates-grid">
+          <!-- Cert 1 -->
+          <div class="certificate-card">
+            <img src="./images/cert1.jpg" alt="EICTA Consortium Professional Certificate" class="cert-img">
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="certificate-card">
+            <img src="./images/cert2.jpg" alt="EICTA Consortium Advanced Certificate" class="cert-img">
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="certificate-card">
+            <img src="./images/cert3.jpg" alt="EICTA Consortium Certificate" class="cert-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EICTA Consortium Row Matching Screenshot -->
+    <section class="consortium-institutes-section" id="consortium">
+      <div class="container-eicta">
+        <div class="consortium-heading-wrap">
+          <span class="consortium-title">EICTA Consortium</span>
+          <span class="consortium-divider">|</span>
+          <a href="https://eictacademy.meity.gov.in/" target="_blank" rel="noopener noreferrer">MeitY Website</a>
+        </div>
+        <div class="institutes-row">
+          <!-- Card 1 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">IIT Kanpur</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">IIT Guwahati</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">NIT Warangal</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">NIT Patna</div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">MNIT Jaipur</div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="institute-card">
+            <div class="inst-prefix">EICTA</div>
+            <div class="inst-title">IIITDM Jabalpur</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-eicta">
+      <!-- 3 Columns Grid -->
+      <div class="footer-main-grid">
+        <!-- Col 1: About & Subscription -->
+        <div>
+          <h3 class="footer-title">About EICTA consortium</h3>
+          <p class="footer-desc">
+            EICTA consortium offers short and long-term online courses in engineering, sciences, data, management, and
+            more-through online, offline, and blended modes. A joint initiative of MeitY and IITs, NITs, IIITs, the
+            academy is committed to national capacity building through certified learning programs.
+          </p>
+          <p class="footer-desc">
+            Subscribe for expert insights and updates on the latest in emerging tech, directly from the thought leaders
+            at EICTA consortium.
+          </p>
+          <form class="subscribe-form" id="subscribe-form">
+            <input type="email" placeholder="Enter your email" required class="subscribe-input" id="subscriber-email"
+              aria-label="Enter your email address">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Col 2: Our Courses -->
+        <div>
+          <h3 class="footer-title">Our Courses</h3>
+          <ul class="footer-links-list">
+            <li><a href="#courses" class="footer-link-pill">Faculty Development Programs</a></li>
+            <li><a href="#courses" class="footer-link-pill">Student Development Programs</a></li>
+            <li><a href="#courses" class="footer-link-pill">Professional Development Programs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Connect with us at & Contact us -->
+        <div>
+          <h3 class="footer-title">Connect with us at</h3>
+          <div class="social-icons-row">
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.582 9 4.615V8z" />
+              </svg>
+            </a>
+            <!-- X / Twitter -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-circle-btn"
+              aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+
+          <h3 class="footer-title" style="margin-top: 1.75rem; margin-bottom: 0.65rem;">Contact us</h3>
+          <div class="footer-contact-info">
+            <div style="margin-bottom: 0.35rem; color: #cbd5e1; font-size: 0.85rem;">+91-9219972805</div>
+            <div><a href="mailto:support@eicta.iitk.ac.in"
+                style="color: #cbd5e1; font-size: 0.85rem; text-decoration: none;">support@eicta.iitk.ac.in</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Policy Links -->
+      <div class="footer-policies-row">
+        <a href="#contact">Contact Us</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+        <a href="#refund">Refund Policy</a>
+        <a href="#grievance">Grievance Redressal Cell</a>
+        <a href="#careers">Careers</a>
+      </div>
+
+      <!-- Legal Disclaimer -->
+      <p class="footer-disclaimer">
+        Kindly note that all certificates given by EICTA consortium do not entitle the person to claim the status of an
+        alumni of IITK unless specifically stated. Kindly also note that all internships, projects, placements that are
+        promised are the sole responsibility of the concerned delivery partner. EICTA consortium is neither liable nor
+        responsible for the same.
+      </p>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>Copyright &copy; 2026 | EICTA consortium | Powered by MeitY</div>
+        <div class="footer-bottom-links">
+          <a href="#membership">Institutional Membership</a>
+          <a href="#verify">ICT Certificate Verification</a>
+          <a href="#verify">Certificate Verification</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="modal-auth" role="dialog" aria-modal="true" aria-labelledby="modal-auth-title">
+    <div class="modal-container" style="max-width: 480px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-auth-title">EICTA Portal Access</h3>
+        <button type="button" class="modal-close-btn" id="modal-auth-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="auth-form">
+          <div style="margin-bottom: 1rem;">
+            <label for="auth-email" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem;">Email / Learner ID</label>
+            <input type="text" id="auth-email" required placeholder="user@eicta.ac.in"
+              style="width: 100%; padding: 0.65rem; border: 1px solid #cbd5e1; border-radius: 0.375rem;">
+          </div>
+          <div style="margin-bottom: 1.5rem;">
+            <label for="auth-password" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem;">Password</label>
+            <input type="password" id="auth-password" required placeholder="••••••••"
+              style="width: 100%; padding: 0.65rem; border: 1px solid #cbd5e1; border-radius: 0.375rem;">
+          </div>
+          <button type="submit" class="btn-nav-login"
+            style="width: 100%; justify-content: center; padding: 0.75rem; font-size: 0.95rem;">Sign In to Dashboard</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

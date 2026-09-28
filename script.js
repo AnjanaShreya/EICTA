@@ -790,35 +790,68 @@
   function initCategories() {
     const catBtns = document.querySelectorAll('.category-btn');
     const modeBtns = document.querySelectorAll('.mode-filter-pill');
+    const categorySelect = document.getElementById('mobile-category-select');
+    const modeSelect = document.getElementById('mobile-mode-select');
 
-    catBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        catBtns.forEach((b) => {
-          b.classList.remove('active');
-          const arrow = b.querySelector('.cat-arrow');
-          if (arrow) arrow.remove();
-        });
+    function selectCategory(catVal) {
+      state.currentCategory = catVal || 'ai-ml';
 
-        btn.classList.add('active');
-        if (!btn.querySelector('.cat-arrow')) {
+      catBtns.forEach((b) => {
+        const isMatch = (b.getAttribute('data-cat') || '') === state.currentCategory;
+        b.classList.toggle('active', isMatch);
+        const arrow = b.querySelector('.cat-arrow');
+        if (arrow) arrow.remove();
+        if (isMatch) {
           const arrowSpan = document.createElement('span');
           arrowSpan.className = 'cat-arrow';
           arrowSpan.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6" /></svg>';
-          btn.appendChild(arrowSpan);
+          b.appendChild(arrowSpan);
         }
+      });
 
-        state.currentCategory = btn.getAttribute('data-cat') || 'ai-ml';
-        updateConsortiumGrid(state.currentCategory);
+      if (categorySelect && categorySelect.value !== state.currentCategory) {
+        categorySelect.value = state.currentCategory;
+      }
+
+      updateConsortiumGrid(state.currentCategory);
+    }
+
+    function selectMode(modeVal) {
+      state.currentMode = modeVal || 'Online';
+      modeBtns.forEach((b) => {
+        b.classList.toggle('active', (b.getAttribute('data-mode') || '') === state.currentMode);
+      });
+
+      if (modeSelect && modeSelect.value !== state.currentMode) {
+        modeSelect.value = state.currentMode;
+      }
+    }
+
+    catBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-cat') || 'ai-ml';
+        selectCategory(cat);
       });
     });
 
     modeBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        modeBtns.forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        state.currentMode = btn.getAttribute('data-mode') || 'Online';
+        const mode = btn.getAttribute('data-mode') || 'Online';
+        selectMode(mode);
       });
     });
+
+    if (categorySelect) {
+      categorySelect.addEventListener('change', (e) => {
+        selectCategory(e.target.value);
+      });
+    }
+
+    if (modeSelect) {
+      modeSelect.addEventListener('change', (e) => {
+        selectMode(e.target.value);
+      });
+    }
   }
 
   /* ==========================================================================

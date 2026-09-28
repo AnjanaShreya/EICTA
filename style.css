@@ -97,7 +97,7 @@ body {
 }
 
 .eicta-top-logo {
-  height: 110px;
+  height: 120px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -575,7 +575,7 @@ body {
 }
 
 .section-heading-main {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 1.25rem;
@@ -583,10 +583,11 @@ body {
 }
 
 .about-text {
-  font-size: 0.975rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   color: #475569;
   text-align: justify;
+  font-weight: 500;
 }
 
 .about-illustration-col {
@@ -851,7 +852,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 4.5rem 0 4rem;
+  padding: 3.5rem 0 3rem;
   background-color: #d6e2ef;
   border-top: 1px solid #c4d5e7;
   border-bottom: 1px solid #c4d5e7;
@@ -862,10 +863,10 @@ body {
 
 .testimonials-heading {
   text-align: center;
-  font-size: 2.15rem;
+  font-size: 1.85rem;
   font-weight: 800;
   color: #0f172a;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   letter-spacing: -0.02em;
 }
 
@@ -873,24 +874,24 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: 0.75rem 3.5rem;
+  padding: 0.5rem 3rem;
 }
 
 .testimonials-track {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.15rem;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
 .testimonial-card {
-  flex: 0 0 clamp(320px, 23vw, 400px);
-  min-width: 300px;
+  flex: 0 0 clamp(240px, 18vw, 280px);
+  min-width: 220px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 0.85rem;
-  padding: 1.75rem 1.65rem 1.5rem;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  border-radius: 0.6rem;
+  padding: 1.15rem 1.15rem 1rem;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -898,20 +899,20 @@ body {
 }
 
 .testimonial-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.09);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
 .testimonial-user {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
-  margin-bottom: 1.15rem;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .testimonial-avatar {
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #e2e8f0;
@@ -919,32 +920,32 @@ body {
 }
 
 .testimonial-name {
-  font-size: 1.025rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: #0f172a;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .testimonial-quote {
-  font-size: 0.925rem;
-  line-height: 1.65;
+  font-size: 0.825rem;
+  line-height: 1.55;
   color: #334155;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
   flex-grow: 1;
 }
 
 .testimonial-stars {
   color: #f59e0b;
-  font-size: 1rem;
-  letter-spacing: 3px;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
 }
 
 .testimonials-nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--color-navy);
   color: #ffffff;
@@ -954,7 +955,7 @@ body {
   justify-content: center;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
   transition: all 0.2s ease;
 }
 
@@ -1020,8 +1021,8 @@ body {
 
 .consortium-layout {
   display: grid;
-  grid-template-columns: 290px 1fr;
-  gap: 2rem;
+  grid-template-columns: 270px 1fr;
+  gap: 1.75rem;
   align-items: start;
 }
 
@@ -1029,7 +1030,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  max-height: 485px;
+  max-height: 520px;
   overflow-y: scroll;
   padding-right: 0.5rem;
 }
@@ -1054,15 +1055,16 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  padding: 0.8rem 1rem;
-  font-size: 0.88rem;
+  padding: 0.72rem 0.95rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: #1e293b;
   background: #f1f5f9;
   border: none;
-  border-radius: 8px;
+  border-radius: 7px;
   cursor: pointer;
   transition: all 0.2s ease;
+  line-height: 1.35;
 }
 
 .category-btn:hover {
@@ -1080,6 +1082,11 @@ body {
   align-items: center;
   margin-left: 0.5rem;
   color: #ffffff;
+}
+
+/* Mobile Responsive Dropdowns (Hidden on desktop) */
+.consortium-mobile-dropdowns {
+  display: none;
 }
 
 .catalog-top-row {
@@ -1626,6 +1633,11 @@ body {
 
 /* Large Tablets & Laptops (<= 1200px) */
 @media (max-width: 1200px) {
+  .consortium-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 1.25rem;
+  }
+
   .cards-grid-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -1650,9 +1662,10 @@ body {
   }
 
   .eicta-top-logo {
-    height: 40px;
+    height: 44px;
     width: auto;
-    max-width: 250px;
+    max-width: min(320px, 75vw);
+    object-fit: contain;
   }
 
   .mobile-menu-btn {
@@ -1674,13 +1687,24 @@ body {
   }
 
   /* Hero Section */
+  .hero-section {
+    height: 340px;
+  }
+
   .hero-slide {
-    min-height: 380px;
+    min-height: unset;
+    height: 100%;
+    background-size: cover;
+    background-position: right center;
   }
 
   .hero-title {
-    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
     line-height: 1.25;
+  }
+
+  .hero-nav-arrow {
+    display: none !important;
   }
 
   /* About Grid */
@@ -1699,38 +1723,82 @@ body {
     height: auto;
   }
 
-  /* Consortium Layout: Sidebar transforms into horizontal scrolling category pills */
+  /* Consortium Layout: Hide desktop sidebar and pills, show vertical dropdowns one below the other */
   .consortium-layout {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .categories-sidebar {
+    display: none !important;
+  }
+
+  .catalog-top-row {
+    display: none !important;
+  }
+
+  .consortium-mobile-dropdowns {
     display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 0.5rem;
-    padding: 0.6rem 0.5rem;
-    border: 1px solid #e2e8f0;
+    flex-direction: column;
+    gap: 0.85rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .consortium-select-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .dropdown-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .select-box-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  .consortium-select {
+    width: 100%;
+    height: 48px;
+    padding: 0.65rem 2.5rem 0.65rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0f172a;
+    background-color: #ffffff;
+    border: 1.5px solid #cbd5e1;
     border-radius: 8px;
-    background: #ffffff;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    font-family: inherit;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
   }
 
-  .category-btn {
-    flex-shrink: 0;
-    width: auto;
-    border-radius: 6px;
-    padding: 0.55rem 1rem;
-    font-size: 0.85rem;
-    border-bottom: none;
+  .consortium-select:focus {
+    border-color: #1c3664;
+    box-shadow: 0 0 0 3px rgba(28, 54, 100, 0.12);
   }
 
-  .category-btn .cat-arrow {
-    display: none;
+  .select-chevron {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .consortium-cards-grid {
@@ -1771,53 +1839,65 @@ body {
 
   /* About section matching reference screenshot */
   .about-section {
-    padding: 2.25rem 0 2rem;
+    padding: 1.75rem 0 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .about-text-col .section-heading-main {
-    font-size: 1.85rem;
+    font-size: 1.55rem;
     font-weight: 800;
     color: #0b1a30;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
     letter-spacing: -0.02em;
   }
 
   .about-text {
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 0.88rem;
+    line-height: 1.6;
     color: #1e293b;
     font-weight: 500;
+    text-align: justify;
   }
 
   /* Hero Section matching mobile reference screenshot */
+  .hero-section {
+    height: clamp(235px, 48vw, 275px);
+  }
+
   .hero-slide {
-    min-height: 250px;
+    min-height: unset;
+    height: 100%;
     background-size: cover;
     background-position: right center;
   }
 
   .hero-slide-inner {
-    padding: 1.25rem 1.25rem 2rem;
+    padding: 0.85rem 1rem 1.25rem;
     display: flex;
     align-items: center;
-    min-height: 250px;
+    height: 100%;
   }
 
   .hero-slide-content {
-    max-width: 68%;
+    max-width: 56%;
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
   }
 
   .hero-title {
-    font-size: clamp(1.05rem, 4.2vw, 1.4rem);
+    font-size: clamp(0.95rem, 3.4vw, 1.25rem);
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.28;
-    margin-bottom: 0.65rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    line-height: 1.25;
+    margin-bottom: 0.55rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   }
 
   .hero-title br {
@@ -1830,20 +1910,20 @@ body {
 
   .hero-btn-wrap {
     display: block !important;
-    margin-top: 0.25rem !important;
+    margin-top: 0.2rem !important;
   }
 
   .hero-btn-green {
     display: inline-flex !important;
-    padding: 0.45rem 1.2rem;
-    font-size: 0.82rem;
+    padding: 0.38rem 1.15rem;
+    font-size: 0.8rem;
     font-weight: 700;
     border-radius: 9999px;
     background-color: #22c55e;
     color: #ffffff;
     text-decoration: none;
-    box-shadow: 0 3px 10px rgba(34, 197, 94, 0.4);
-    margin-top: 0.25rem;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+    margin-top: 0.15rem;
     transition: background-color 0.2s ease, transform 0.15s ease;
   }
 
@@ -1854,34 +1934,17 @@ body {
   }
 
   .hero-nav-arrow {
-    width: 32px;
-    height: 54px;
-    background: rgba(0, 0, 0, 0.45);
-    color: #e2e8f0;
-    border-radius: 6px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(3px);
-  }
-
-  .hero-nav-arrow.prev {
-    left: 0.35rem;
-  }
-
-  .hero-nav-arrow.next {
-    right: 0.35rem;
+    display: none !important;
   }
 
   .hero-indicators {
-    bottom: 0.65rem;
-    gap: 0.45rem;
+    bottom: 10px;
+    gap: 0.4rem;
   }
 
   .hero-dot {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.45);
     border: none;
@@ -1890,9 +1953,12 @@ body {
   }
 
   .hero-dot.active {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background: #ffffff;
     opacity: 1;
-    transform: scale(1.15);
+    transform: none;
   }
 
   /* Career Potential Controls on Mobile Matching Screenshot 2 */
@@ -2007,27 +2073,51 @@ body {
 
   /* Testimonials */
   .testimonials-section {
-    padding: 3.5rem 0 3rem;
+    padding: 2.75rem 0 2.25rem;
   }
 
   .testimonials-heading {
-    font-size: 1.6rem;
-    margin-bottom: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .testimonials-slider-wrap {
     padding: 0.5rem 1.75rem;
   }
 
+  .testimonials-track {
+    gap: 0.85rem;
+  }
+
   .testimonial-card {
-    flex: 0 0 calc(100% - 0.5rem);
-    min-width: 260px;
-    padding: 1.4rem 1.25rem;
+    flex: 0 0 min(260px, 78vw);
+    min-width: 210px;
+    padding: 1rem 1rem 0.9rem;
+  }
+
+  .testimonial-avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  .testimonial-name {
+    font-size: 0.88rem;
+  }
+
+  .testimonial-quote {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 0.65rem;
+  }
+
+  .testimonial-stars {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
   }
 
   .testimonials-nav-btn {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
 
   .testimonials-nav-btn.prev {
@@ -2039,31 +2129,6 @@ body {
   }
 
   /* Consortium Content Area */
-  .catalog-top-row {
-    margin-bottom: 1.25rem;
-  }
-
-  .mode-filters-group {
-    display: flex;
-    overflow-x: auto;
-    width: 100%;
-    padding-bottom: 0.35rem;
-    gap: 0.45rem;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .mode-filters-group::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mode-filter-pill {
-    flex-shrink: 0;
-    white-space: nowrap;
-    padding: 0.45rem 0.85rem;
-    font-size: 0.82rem;
-  }
-
   .consortium-cards-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -2142,26 +2207,45 @@ body {
   }
 
   .header-logo-row {
-    padding: 0.65rem 0.85rem;
+    padding: 0.5rem 0.85rem;
+    min-height: 48px;
   }
 
   .eicta-top-logo {
-    height: 38px;
+    height: 40px;
+    max-height: 42px;
+    width: auto;
+    max-width: min(270px, 78vw);
+    object-fit: contain;
+  }
+
+  .hero-section {
+    height: 240px;
   }
 
   .hero-slide {
-    min-height: 250px;
+    min-height: unset;
+    height: 100%;
+  }
+
+  .hero-slide-inner {
+    padding: 0.75rem 0.75rem 1rem;
+  }
+
+  .hero-slide-content {
+    max-width: 58%;
   }
 
   .hero-title {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.22;
+    margin-bottom: 0.45rem;
   }
 
   .hero-btn-green {
     display: inline-flex !important;
-    padding: 0.45rem 1.15rem;
-    font-size: 0.8rem;
+    padding: 0.35rem 1rem;
+    font-size: 0.76rem;
   }
 
   .subscribe-form {
